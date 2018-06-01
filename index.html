@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Main</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body contenteditable="false">
+<div class="sidenav" id="mySidenav">
+    <div class="menu-wrapper">
+    <div class="menu-top">
+        <a href="#"><i class="icon footer-logo"></i></a>
+        <a href="javascript:void(0)" class="btn-close" onclick="closeNav()"><i class="icon i-close"></i></a>
+        <div class="share-box visible-xs visible-sm">
+            <a href="#"><i class="icon f-vk"></i></a>
+            <a href="#"><i class="icon f-fb"></i></a>
+            <a href="#"><i class="icon f-tw"></i></a>
+            <a href="#"><i class="icon f-ins"></i></a>
+            <a href="#"><i class="icon f-tele"></i></a>
+        </div>
+        <div class="valut-box visible-xs visible-sm">
+            <ul class="valut">
+                <li><span>USD</span><span>324.92</span></li>
+                <li><span>EUR</span><span>425.27</span></li>
+                <li><span>RUB</span><span>5.85</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="menu-middle">
+        <p>Категории</p>
+        <ul class="category-list">
+            <li><a href="#">100 новых лиц</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Экономика</a></li>
+            <li><a href="#">Политика</a></li>
+            <li><a href="#">Культура</a></li>
+            <li><a href="#">Спорт</a></li>
+            <li><a href="#">Право</a></li>
+            <li><a href="#">Мнения</a></li>
+            <li><a href="#">Репортаж</a></li>
+            <li><a href="#">Очевидец</a></li>
+        </ul>
+        <p>Информация</p>
+        <ul class="category-list">
+            <li><a href="#">О проекте</a></li>
+            <li><a href="#">Правила сайта</a></li>
+            <li><a href="#">Реклама</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </div>
+    <div class="menu-basement footer-basement">
+        <p>Информационный ресурс ATPress.kz © 2017. Все права защищены</p>
+        <p>Использование материалов возможно только с соблюдением Правил пользования сайтом</p>
+        <p>Разработка и дизайн bg.pro, 2018</p>
+    </div>
+    </div>
+</div>
+<div class="header">
+    <div class="container-fluid block-padding2">
+        <div class="header-top row">
+            <div class="col-md-6 col-sm-6 top-item top-left">
+                <div class="logo-box hidden-xs">
+                    <a href="#" class="logo">
+                        <img src="image/logo/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="social-box hidden-xs hidden-sm">
+                    <i class="icon i-twitter"></i>
+                    <i class="icon i-facebook"></i>
+                    <i class="icon i-instagram"></i>
+                    <i class="icon i-vk"></i>
+                    <i class="icon i-telegram"></i>
+                </div>
+                <div class="witness-box hidden-xs">
+                    <a class="btn-witness show_popup" rel="popup-pub" onclick="display()" id="display1">Я очевидец</a>
+                </div>
+                <div class="widget-box  hidden-sm hidden-md hidden-lg">
+                    <div class="weather">
+                        <i class="icon i-cloud"></i>
+                        <span>+12</span><span> Астана</span>
+                    </div>
+                    <ul class="lg" id="dr1">
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">RUS</a>
+                            <ul class="sub-lg dropdown-menu" id="m1">
+                                <li><a href="#">KAZ</a></li>
+                                <li><a href="#">ENG</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn-search show_popup" rel="popup-search"></a>
+                </div>
+                <div class="witness-box visible-xs">
+                    <a class="btn-witness show_popup" rel="popup-pub" onclick="display()" id="display1">Я очевидец</a>
+                </div>
+            </div>
+            <div class="col-md-offset-0 col-md-6 col-sm-offset-1 col-sm-5 top-item block-padding1">
+                <div class="logo-box hidden-sm hidden-md hidden-lg">
+                    <a href="#" class="logo">
+                        <img src="image/logo/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="valut-box hidden-xs hidden-sm">
+                    <ul class="valut">
+                        <li><span>USD</span><span>324.92</span></li>
+                        <li><span>EUR</span><span>425.27</span></li>
+                        <li><span>RUB</span><span>5.85</span></li>
+                    </ul>
+                </div>
+                <div class="widget-box hidden-xs">
+                    <div class="weather">
+                        <i class="icon i-cloud"></i>
+                        <span>+12</span><span> Астана</span>
+                    </div>
+                    <ul class="lg" id="dr1">
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">RUS</a>
+                            <ul class="sub-lg dropdown-menu" id="m1">
+                                <li><a href="#">KAZ</a></li>
+                                <li><a href="#">ENG</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn-search show_popup" rel="popup-search"></a>
+                </div>
+                <div class="menu-right">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#m-menu" onclick="openNav()">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<div class="container">-->
+        <!--<div class="header-top row">-->
+            <!--<div class="col-md-2 logo-box">-->
+                <!--<a href="#" class="logo">-->
+                    <!--<img src="image/logo/logo.png" alt="">-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div class="col-md-2 social-box">-->
+                <!--<i class="icon i-twitter"></i>-->
+                <!--<i class="icon i-facebook"></i>-->
+                <!--<i class="icon i-instagram"></i>-->
+                <!--<i class="icon i-vk"></i>-->
+                <!--<i class="icon i-telegram"></i>-->
+            <!--</div>-->
+            <!--<div class="col-md-2 witness-box">-->
+                <!--<a class="btn-witness show_popup" rel="popup-pub" onclick="display()" id="display1">Я очевидец</a>-->
+            <!--</div>-->
+            <!--<div class="col-md-3 valut-box">-->
+                <!--<ul class="valut">-->
+                    <!--<li><span>USD</span><span>324.92</span></li>-->
+                    <!--<li><span>EUR</span><span>425.27</span></li>-->
+                    <!--<li><span>RUB</span><span>5.85</span></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+            <!--<div class="col-md-2 widget-box">-->
+                <!--<div class="weather">-->
+                    <!--<i class="icon i-cloud"></i>-->
+                    <!--<span>+12</span><span> Астана</span>-->
+                <!--</div>-->
+                <!--<ul class="lg" id="dr1">-->
+                    <!--<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">RUS</a>-->
+                        <!--<ul class="sub-lg dropdown-menu" id="m1">-->
+                            <!--<li><a href="#">KAZ</a></li>-->
+                            <!--<li><a href="#">ENG</a></li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
+                <!--</ul>-->
+                    <!--<a href="#" class="btn-search show_popup" rel="popup-search"></a>-->
+            <!--</div>-->
+            <!--<div class="col-md-1 menu-right">-->
+                <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#m-menu" onclick="openNav()">-->
+                    <!--<span class="icon-bar"></span>-->
+                    <!--<span class="icon-bar"></span>-->
+                    <!--<span class="icon-bar"></span>-->
+                <!--</button>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <div class="container-fluid header-bottom hidden-xs hidden-sm">
+        <div class="row">
+            <ul class="nav navbar-nav m-menu">
+                <li><a href="#">100 Новых лиц</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Экономика</a></li>
+                <li><a href="#">Политика</a></li>
+                <li><a href="#">Культура</a></li>
+                <li><a href="#">Спорт</a></li>
+                <li><a href="#">Право</a></li>
+                <li><a href="#">Мнения</a></li>
+                <li><a href="#">Репортаж</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div class="container block-position">
+        <div class="row news-top">
+            <div class="col-md-9 col-sm-9">
+                <div class="sl">
+                    <div class="sl-item">
+                        <div class="sl-img">
+                            <img src="image/sl/sub1_2.jpg" alt="">
+                        </div>
+                        <div class="sl-caption">
+                            <p>В Атырау два подростка упали в шахту лифта</p>
+                            <button>Читать подробнее</button>
+                        </div>
+                    </div>
+                    <div class="sl-item">
+                        <div class="sl-img">
+                            <img src="image/sl/sub2_4.jpg" alt="">
+                        </div>
+                        <div class="sl-caption">
+                            <p>В Атырау два подростка упали в шахту лифта 1</p>
+                            <button>Читать подробнее</button>
+                        </div>
+                    </div>
+                    <div class="sl-item">
+                        <div class="sl-img">
+                            <img src="image/sl/sub1_2.jpg" alt="">
+                        </div>
+                        <div class="sl-caption">
+                            <p>В Атырау два подростка упали в шахту лифта 2</p>
+                            <button>Читать подробнее</button>
+                        </div>
+                    </div>
+                    <div class="sl-item">
+                        <div class="sl-img">
+                            <img src="image/sl/sub2_4.jpg" alt="">
+                        </div>
+                        <div class="sl-caption">
+                            <p>В Атырау два подростка упали в шахту лифта 3</p>
+                            <button>Читать подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 listnews-box">
+                <p>Лента новостей</p>
+                <div class="list-news">
+                    <div class="list-item">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">2 қазан, 2017</span>
+                    </div>
+                    <div class="list-item">
+                        <p>«Милиция қартайса, молда болады»</p>
+                        <span class="data-span">2 қазан, 2017</span>
+                    </div>
+                    <div class="list-item">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">2 қазан, 2017</span>
+                    </div>
+                    <div class="list-item">
+                        <p>«Милиция қартайса, молда болады»</p>
+                        <span class="data-span">2 қазан, 2017</span>
+                    </div>
+                    <div class="list-item">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">2 қазан, 2017</span>
+                    </div>
+                    <div class="list-item">
+                        <p>«Милиция қартайса, молда болады»</p>
+                        <span class="data-span">2 қазан, 2017</span>
+                    </div>
+                    <div class="list-item">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">2 қазан, 2017</span>
+                    </div>
+                    <div class="list-item">
+                        <p>«Милиция қартайса, молда болады»</p>
+                        <span class="data-span">2 қазан, 2017</span>
+                    </div>
+                    <div class="list-item">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">2 қазан, 2017</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row news-popular">
+            <div class="col-md-9 col-sm-9 popular-padding">
+                <p class="block-title">Популярно</p>
+                <div class="row block-border">
+                    <div class="col-md-4 col-sm-4 popular-item">
+                        <p>Культура</p>
+                        <img src="image/main/rectangle-5.jpg" alt="">
+                        <p>Столичный творческий десант в Атырау</p>
+                        <span class="data-span">3 сентябрь, 2017</span></div>
+                    <div class="col-md-4 col-sm-4 popular-item">
+                        <p>Культура</p>
+                        <img src="image/main/rectangle-5-copy.jpg" alt="">
+                        <p>В Атырау задержаны сотрудники Национальной гвардии /ФОТО и ВИДЕО</p>
+                        <span class="data-span">3 сентябрь, 2017</span></div>
+                    <div class="col-md-4 col-sm-4 popular-item">
+                        <p>Культура</p>
+                        <img src="image/main/rectangle-5-copy-2.jpg" alt="">
+                        <p>Двери в шахту лифта были заварены</p>
+                        <span class="data-span">3 сентябрь, 2017</span></div>
+                </div>
+            </div>
+            <div class="col-md-3  col-sm-3 banner-side">
+                <img src="image/banner/adv.jpg" alt="">
+            </div>
+        </div>
+        <div class="row news-discuss">
+            <div class="col-md-8 col-sm-8 discuss">
+                <p class="block-title">Обусждаемое</p>
+                <div class="block-border">
+                    <div class="row discuss-top">
+                        <div class="col-md-6 col-sm-6 dtop-item">
+                            <img src="image/main/discuss.jpg" alt="">
+                            <p>На Сатпаева станет просторней?</p>
+                            <p> В Атырау местные власти уже в ближайшем
+                                будущем планируют сократить количество пешеходных переходов на одной из самых
+                                загруженных улиц города.
+                            </p>
+                            <span class="data-span">3 сентябрь, 2017</span>
+                        </div>
+                        <div class="col-md-6 col-sm-6 dtop-item">
+                            <img src="image/main/discuss-copy-4.jpg" alt="">
+                            <p>«Господдержка субъектов бизнеса поможет в увеличении экспортного потенциала региона»</p>
+                            <p>Аким Атырауской области Нурлан Ногаев побывал в Исатайском и Курмангазинском районах.</p>
+                            <span class="data-span">3 сентябрь, 2017</span>
+                        </div>
+                    </div>
+                    <div class="row discuss-bottom">
+                        <div class="col-md-3 col-sm-3 dbottom-item">
+                            <img src="image/main/rectangle-5.jpg" alt="">
+                            <p>Столичный творческий десант в Атырау</p>
+                            <p>Большой гастрольный тур столичных артистов по городам
+                                Казахстана в честь 20-летия главного города страны продолжается
+                            </p>
+                            <span class="data-span">3 сентябрь, 2017</span>
+                        </div>
+                        <div class="col-md-3 col-sm-3 dbottom-item">
+                            <img src="image/main/rectangle-5.jpg" alt="">
+                            <p>Столичный творческий десант в Атырау</p>
+                            <p>Большой гастрольный тур столичных артистов по городам
+                                Казахстана в честь 20-летия главного города страны продолжается
+                            </p>
+                            <span class="data-span">3 сентябрь, 2017</span>
+                        </div>
+                        <div class="col-md-3 col-sm-3 dbottom-item">
+                            <img src="image/main/rectangle-5.jpg" alt="">
+                            <p>Столичный творческий десант в Атырау</p>
+                            <p>Большой гастрольный тур столичных артистов по городам
+                                Казахстана в честь 20-летия главного города страны продолжается
+                            </p>
+                            <span class="data-span">3 сентябрь, 2017</span>
+                        </div>
+                        <div class="col-md-3 col-sm-3 dbottom-item">
+                            <img src="image/main/rectangle-5.jpg" alt="">
+                            <p>Столичный творческий десант в Атырау</p>
+                            <p>Большой гастрольный тур столичных артистов по городам
+                                Казахстана в честь 20-летия главного города страны продолжается
+                            </p>
+                            <span class="data-span">3 сентябрь, 2017</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 widget-side">
+                <p class="block-title">Мы в Facebook</p>
+                <div class="facebook-box">
+                    <div id="fb-root"></div>
+                    <script>(function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s); js.id = id;
+                        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));</script>
+                    <div class="fb-page" data-href="https://www.facebook.com/FacebookforDevelopers/" data-tabs="timeline" data-height="230px" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/FacebookforDevelopers/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/FacebookforDevelopers/">Facebook for Developers</a></blockquote></div>
+                </div>
+                <div class="vote-box">
+                    <p class="block-title">Опрос</p>
+                    <p>Вы доверяете казахстанским СМИ?</p>
+                    <div class="radio">
+                        <input id="yes" type="radio" name="vote">
+                        <label for="yes"><span>Да, конечно!</span></label><br>
+                        <input id="no" type="radio" name="vote">
+                        <label for="no"><span>Нет, все врут.</span></label><br>
+                        <input id="partly" type="radio" name="vote">
+                        <label for="partly"><span>Частично, не всем.</span></label><br>
+                        <button class="btn-vote">Голосовать</button>
+                        <a href="#">Результаты</a>
+                    </div>
+                </div>
+                <div class="vote-result">
+                    <p class="block-title">Результаты опроса</p>
+                    <p>Вы доверяете казахстанским СМИ?</p>
+                    <span class="data-span">Да, конечно!</span>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40"
+                             aria-valuemin="0" aria-valuemax="100" style="width: 38%">
+                            <span class="procent">38%</span>
+                        </div>
+                    </div>
+                    <span class="data-span">Нет, все врут.</span>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="20"
+                             aria-valuemin="0" aria-valuemax="100" style="width: 65%">
+                            <span class="procent">65%</span>
+                        </div>
+                    </div>
+                    <span class="data-span">Частично, не всем.</span>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60"
+                             aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                            <span class="procent">0%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row banner-full"><img src="image/banner/adv-3.jpg" alt=""></div>
+        <div class="row sl-box">
+            <div class="col-md-6 col-sm-6 sl-video">
+                <p class="block-title">Видеогалерея</p>
+                <div class="video-for">
+                    <div class="video-top">
+                        <img src="image/sl-img/1.jpg" alt="">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">3 сентябрь, 2017</span>
+                    </div>
+                    <div class="video-top">
+                        <img src="image/sl-img/bitmap.jpg" alt="">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">3 сентябрь, 2017</span>
+                    </div>
+                    <div class="video-top">
+                        <img src="image/sl-img/3.jpg" alt="">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">3 сентябрь, 2017</span>
+                    </div>
+                    <div class="video-top">
+                        <img src="image/sl-img/4.jpg" alt="">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">3 сентябрь, 2017</span>
+                    </div>
+                    <div class="video-top">
+                        <img src="image/sl-img/1.jpg" alt="">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">3 сентябрь, 2017</span>
+                    </div>
+                    <div class="video-top">
+                        <img src="image/sl-img/bitmap.jpg" alt="">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">3 сентябрь, 2017</span>
+                    </div>
+                    <div class="video-top">
+                        <img src="image/sl-img/3.jpg" alt="">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">3 сентябрь, 2017</span>
+                    </div>
+                    <div class="video-top">
+                        <img src="image/sl-img/4.jpg" alt="">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">3 сентябрь, 2017</span>
+                    </div>
+                </div>
+                <div class="video-nav">
+                    <div class="video-bottom">
+                        <img src="image/sl-img/1.jpg" alt="">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">3 сентябрь, 2017</span>
+                    </div>
+                    <div class="video-bottom">
+                        <img src="image/sl-img/bitmap.jpg" alt="">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">3 сентябрь, 2017</span>
+                    </div>
+                    <div class="video-bottom">
+                        <img src="image/sl-img/3.jpg" alt="">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">3 сентябрь, 2017</span>
+                    </div>
+                    <div class="video-bottom">
+                        <img src="image/sl-img/4.jpg" alt="">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">3 сентябрь, 2017</span>
+                    </div>
+                    <div class="video-bottom">
+                        <img src="image/sl-img/1.jpg" alt="">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">3 сентябрь, 2017</span>
+                    </div>
+                    <div class="video-bottom">
+                        <img src="image/sl-img/bitmap.jpg" alt="">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">3 сентябрь, 2017</span>
+                    </div>
+                    <div class="video-bottom">
+                        <img src="image/sl-img/3.jpg" alt="">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">3 сентябрь, 2017</span>
+                    </div>
+                    <div class="video-bottom">
+                        <img src="image/sl-img/4.jpg" alt="">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">3 сентябрь, 2017</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6 col-sm-6 sl-img">
+                <p class="block-title">Фотогалерея</p>
+                <div class="img-for">
+                    <div class="img-top">
+                        <img src="image/sl-img/1.jpg" alt="">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">3 сентябрь, 2017</span>
+                    </div>
+                    <div class="img-top">
+                        <img src="image/sl-img/bitmap.jpg" alt="">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">3 сентябрь, 2017</span>
+                    </div>
+                    <div class="img-top">
+                        <img src="image/sl-img/3.jpg" alt="">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">3 сентябрь, 2017</span>
+                    </div>
+                    <div class="img-top">
+                        <img src="image/sl-img/4.jpg" alt="">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">3 сентябрь, 2017</span>
+                    </div>
+                    <div class="img-top">
+                        <img src="image/sl-img/1.jpg" alt="">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">3 сентябрь, 2017</span>
+                    </div>
+                    <div class="img-top">
+                        <img src="image/sl-img/bitmap.jpg" alt="">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">3 сентябрь, 2017</span>
+                    </div>
+                    <div class="img-top">
+                        <img src="image/sl-img/3.jpg" alt="">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">3 сентябрь, 2017</span>
+                    </div>
+                    <div class="img-top">
+                        <img src="image/sl-img/4.jpg" alt="">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">3 сентябрь, 2017</span>
+                    </div>
+                </div>
+                <div class="img-nav">
+                    <div class="img-bottom">
+                        <img src="image/sl-img/1.jpg" alt="">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">3 сентябрь, 2017</span>
+                    </div>
+                    <div class="img-bottom">
+                        <img src="image/sl-img/bitmap.jpg" alt="">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">3 сентябрь, 2017</span>
+                    </div>
+                    <div class="img-bottom">
+                        <img src="image/sl-img/3.jpg" alt="">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">3 сентябрь, 2017</span>
+                    </div>
+                    <div class="img-bottom">
+                        <img src="image/sl-img/4.jpg" alt="">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">3 сентябрь, 2017</span>
+                    </div>
+                    <div class="img-bottom">
+                        <img src="image/sl-img/1.jpg" alt="">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">3 сентябрь, 2017</span>
+                    </div>
+                    <div class="img-bottom">
+                        <img src="image/sl-img/bitmap.jpg" alt="">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">3 сентябрь, 2017</span>
+                    </div>
+                    <div class="img-bottom">
+                        <img src="image/sl-img/3.jpg" alt="">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">3 сентябрь, 2017</span>
+                    </div>
+                    <div class="img-bottom">
+                        <img src="image/sl-img/4.jpg" alt="">
+                        <p>ҚР ҰҚК экс-басшысы бейтаныс номерден телефон шалғандарға жауап бермеуге шақырды</p>
+                        <span class="data-span">3 сентябрь, 2017</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row news-discuss block-padding">
+            <div class="col-md-8 col-sm-8 discuss">
+                <p class="block-title">Обусждаемое</p>
+                <div class="block-border">
+                    <div class="row discuss-top">
+                        <div class="col-md-6 col-sm-6 dtop-item">
+                            <img src="image/main/rectangle-5@3x.jpg" alt="">
+                            <p>На Сатпаева станет просторней?</p>
+                            <p> В Атырау местные власти уже в ближайшем
+                                будущем планируют сократить количество пешеходных переходов на одной из самых
+                                загруженных улиц города.
+                            </p>
+                            <span class="data-span">3 сентябрь, 2017</span>
+                        </div>
+                        <div class="col-md-6 col-sm-6 dtop-item">
+                            <img src="image/main/rectangle-5@3x.jpg" alt="">
+                            <p>«Господдержка субъектов бизнеса поможет в увеличении экспортного потенциала региона»</p>
+                            <p>Аким Атырауской области Нурлан Ногаев побывал в Исатайском и Курмангазинском районах.</p>
+                            <span class="data-span">3 сентябрь, 2017</span>
+                        </div>
+                    </div>
+                    <div class="row discuss-bottom">
+                        <div class="col-md-3 col-sm-3 dbottom-item">
+                            <img src="image/main/rectangle-5.jpg" alt="">
+                            <p>Столичный творческий десант в Атырау</p>
+                            <p>Большой гастрольный тур столичных артистов по городам
+                                Казахстана в честь 20-летия главного города страны продолжается
+                            </p>
+                            <span class="data-span">3 сентябрь, 2017</span>
+                        </div>
+                        <div class="col-md-3 col-sm-3 dbottom-item">
+                            <img src="image/main/rectangle-5.jpg" alt="">
+                            <p>Столичный творческий десант в Атырау</p>
+                            <p>Большой гастрольный тур столичных артистов по городам
+                                Казахстана в честь 20-летия главного города страны продолжается
+                            </p>
+                            <span class="data-span">3 сентябрь, 2017</span>
+                        </div>
+                        <div class="col-md-3 col-sm-3 dbottom-item">
+                            <img src="image/main/rectangle-5.jpg" alt="">
+                            <p>Столичный творческий десант в Атырау</p>
+                            <p>Большой гастрольный тур столичных артистов по городам
+                                Казахстана в честь 20-летия главного города страны продолжается
+                            </p>
+                            <span class="data-span">3 сентябрь, 2017</span>
+                        </div>
+                        <div class="col-md-3 col-sm-3 dbottom-item">
+                            <img src="image/main/rectangle-5.jpg" alt="">
+                            <p>Столичный творческий десант в Атырау</p>
+                            <p>Большой гастрольный тур столичных артистов по городам
+                                Казахстана в честь 20-летия главного города страны продолжается
+                            </p>
+                            <span class="data-span">3 сентябрь, 2017</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 banner-side1">
+                <div><img src="image/banner/adva.jpg" alt=""></div>
+
+            </div>
+        </div>
+        <div class="popup-wrapper">
+            <div class="popup-bg"></div>
+            <div class="popup" id="popup-search">
+                <button class="b-search"></button>
+                <input type="text" placeholder="Что вы ищете?">
+            </div>
+            <div class="popup" id="popup-pub">
+                <p>Отправить публикацию</p>
+                <input type="text" id="name" placeholder="Имя">
+                <input type="text" id="phone" placeholder="Телефон">
+                <input type="text" id="mail" placeholder="Ваш e-mail*">
+                <label for="file" class="file_upload">
+                    <a href="" class="btn-upload">Выбрать</a>
+                    <span>Прикрепить файл</span>
+                    <input type="file" id="file">
+                </label>
+                <button class="btn-send">Отправить</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-links">
+        <div class="container">
+            <div class="row links-box">
+                <p>Полезные ссылки</p>
+                <div class="sl-links">
+                    <div class="links-item">
+                        <i class="icon link1"></i>
+                        <p>Парламент Республики Казахстан</p>
+                        <a href="">parlam.kz</a>
+                    </div>
+                    <div class="links-item">
+                        <i class="icon link2"></i>
+                        <p>Электронное Правительство Республики Казахстан</p>
+                        <a href="">egov.kz</a>
+                    </div>
+                    <div class="links-item">
+                        <i class="icon link3"></i>
+                        <p>Стратегия 2050</p>
+                        <a href="">prokuror.gov.kz</a>
+                    </div>
+                    <div class="links-item">
+                        <i class="icon link4"></i>
+                        <p>Генеральная Прокуратура Республики Казахстан</p>
+                        <a href=""></a>
+                    </div>
+                    <div class="links-item">
+                        <i class="icon link1"></i>
+                        <p>Парламент Республики Казахстан</p>
+                        <a href="">parlam.kz</a>
+                    </div>
+                    <div class="links-item">
+                        <i class="icon link1"></i>
+                        <p>Парламент Республики Казахстан</p>
+                        <a href="">parlam.kz</a>
+                    </div>
+                    <div class="links-item">
+                        <i class="icon link2"></i>
+                        <p>Электронное Правительство Республики Казахстан</p>
+                        <a href="">egov.kz</a>
+                    </div>
+                    <div class="links-item">
+                        <i class="icon link3"></i>
+                        <p>Стратегия 2050</p>
+                        <a href="">prokuror.gov.kz</a>
+                    </div>
+                    <div class="links-item">
+                        <i class="icon link4"></i>
+                        <p>Генеральная Прокуратура Республики Казахстан</p>
+                        <a href=""></a>
+                    </div>
+                    <div class="links-item">
+                        <i class="icon link1"></i>
+                        <p>Парламент Республики Казахстан</p>
+                        <a href="">parlam.kz</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="row footer-top">
+            <div class="col-md-5 col-sm-4 hidden-xs block-line"></div>
+            <div class="col-md-2 col-sm-3 logo-box">
+                <i class="icon footer-logo"></i>
+            </div>
+            <div class="col-md-5 col-sm-4 hidden-xs block-line"></div>
+        </div>
+        <div class="row footer-medium">
+            <div class="col-md-4 col-sm-4 footer-item">
+                <p>Категории</p>
+                <ul class="category-list category-column">
+                    <li><a href="#">100 новых лиц</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Экономика</a></li>
+                    <li><a href="#">Политика</a></li>
+                    <li><a href="#">Культура</a></li>
+                    <li><a href="#">Спорт</a></li>
+                    <li><a href="#">Право</a></li>
+                    <li><a href="#">Мнения</a></li>
+                    <li><a href="#">Репортаж</a></li>
+                    <li><a href="#">Очевидец</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-6 footer-item">
+                <p>Информация</p>
+                <ul class="category-list">
+                    <li><a href="#">О проекте</a></li>
+                    <li><a href="#">Правила сайта</a></li>
+                    <li><a href="#">Реклама</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-6 footer-item block-xs">
+                <p>Соц.сети</p>
+                <ul class="category-list">
+                    <li><a href="#"><i class="icon f-vk"></i>О проекте</a></li>
+                    <li><a href="#"><i class="icon f-fb"></i>Правила сайта</a></li>
+                    <li><a href="#"><i class="icon f-tw"></i>Реклама</a></li>
+                    <li><a href="#"><i class="icon f-ins"></i>Контакты</a></li>
+                    <li><a href="#"><i class="icon f-tele"></i>Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-3 footer-item ">
+                <p>Подписка на новости</p>
+                <p>Подписка на новости</p>
+                <p>Оставьте ваш email, чтобы получать наши новости</p>
+                <input type="text" placeholder="Ваш email">
+                <button class="btn-subscribe"></button>
+            </div>
+        </div>
+        <div class="row footer-bottom">
+            <a href="#" class="icon f-ios"></a>
+            <a href="#" class="icon f-android"></a>
+            <a href="#"><i class="icon i-copyright"></i></a>
+        </div>
+        <div class="row footer-basement">
+            <p>Информационный ресурс ATPress.kz © 2017. Все права защищены</p>
+            <p>Использование материалов возможно только с соблюдением Правил пользования сайтом</p>
+            <p>Разработка и дизайн bg.pro, 2018</p>
+        </div>
+    </div>
+
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<script type="text/javascript" src="slick/slick.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/js.js"></script>
+
+</body>
+</html>

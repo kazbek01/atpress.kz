@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Main</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body contenteditable="false">
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<div class="sidenav" id="mySidenav">
+    <div class="menu-wrapper">
+        <div class="menu-top">
+            <a href="#"><i class="icon footer-logo"></i></a>
+            <a href="javascript:void(0)" class="btn-close" onclick="closeNav()"><i class="icon i-close"></i></a>
+            <div class="share-box visible-xs visible-sm">
+                <a href="#"><i class="icon f-vk"></i></a>
+                <a href="#"><i class="icon f-fb"></i></a>
+                <a href="#"><i class="icon f-tw"></i></a>
+                <a href="#"><i class="icon f-ins"></i></a>
+                <a href="#"><i class="icon f-tele"></i></a>
+            </div>
+            <div class="valut-box visible-xs visible-sm">
+                <ul class="valut">
+                    <li><span>USD</span><span>324.92</span></li>
+                    <li><span>EUR</span><span>425.27</span></li>
+                    <li><span>RUB</span><span>5.85</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-middle">
+            <p>Категории</p>
+            <ul class="category-list">
+                <li><a href="#">100 новых лиц</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Экономика</a></li>
+                <li><a href="#">Политика</a></li>
+                <li><a href="#">Культура</a></li>
+                <li><a href="#">Спорт</a></li>
+                <li><a href="#">Право</a></li>
+                <li><a href="#">Мнения</a></li>
+                <li><a href="#">Репортаж</a></li>
+                <li><a href="#">Очевидец</a></li>
+            </ul>
+            <p>Информация</p>
+            <ul class="category-list">
+                <li><a href="#">О проекте</a></li>
+                <li><a href="#">Правила сайта</a></li>
+                <li><a href="#">Реклама</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="menu-basement footer-basement">
+            <p>Информационный ресурс ATPress.kz © 2017. Все права защищены</p>
+            <p>Использование материалов возможно только с соблюдением Правил пользования сайтом</p>
+            <p>Разработка и дизайн bg.pro, 2018</p>
+        </div>
+    </div>
+</div>
+<div class="header">
+    <div class="container-fluid block-padding2">
+        <div class="header-top row">
+            <div class="col-md-6 col-sm-6 top-item top-left">
+                <div class="logo-box hidden-xs">
+                    <a href="#" class="logo">
+                        <img src="image/logo/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="social-box hidden-xs hidden-sm">
+                    <i class="icon i-twitter"></i>
+                    <i class="icon i-facebook"></i>
+                    <i class="icon i-instagram"></i>
+                    <i class="icon i-vk"></i>
+                    <i class="icon i-telegram"></i>
+                </div>
+                <div class="witness-box hidden-xs">
+                    <a class="btn-witness show_popup" rel="popup-pub" onclick="display()" id="display1">Я очевидец</a>
+                </div>
+                <div class="widget-box  hidden-sm hidden-md hidden-lg">
+                    <div class="weather">
+                        <i class="icon i-cloud"></i>
+                        <span>+12</span><span> Астана</span>
+                    </div>
+                    <ul class="lg" id="dr1">
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">RUS</a>
+                            <ul class="sub-lg dropdown-menu" id="m1">
+                                <li><a href="#">KAZ</a></li>
+                                <li><a href="#">ENG</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn-search show_popup" rel="popup-search"></a>
+                </div>
+                <div class="witness-box visible-xs">
+                    <a class="btn-witness show_popup" rel="popup-pub" onclick="display()" id="display1">Я очевидец</a>
+                </div>
+            </div>
+            <div class="col-md-offset-0 col-md-6 col-sm-offset-1 col-sm-5 top-item block-padding1">
+                <div class="logo-box hidden-sm hidden-md hidden-lg">
+                    <a href="#" class="logo">
+                        <img src="image/logo/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="valut-box hidden-xs hidden-sm">
+                    <ul class="valut">
+                        <li><span>USD</span><span>324.92</span></li>
+                        <li><span>EUR</span><span>425.27</span></li>
+                        <li><span>RUB</span><span>5.85</span></li>
+                    </ul>
+                </div>
+                <div class="widget-box hidden-xs">
+                    <div class="weather">
+                        <i class="icon i-cloud"></i>
+                        <span>+12</span><span> Астана</span>
+                    </div>
+                    <ul class="lg" id="dr1">
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">RUS</a>
+                            <ul class="sub-lg dropdown-menu" id="m1">
+                                <li><a href="#">KAZ</a></li>
+                                <li><a href="#">ENG</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn-search show_popup" rel="popup-search"></a>
+                </div>
+                <div class="menu-right">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#m-menu"
+                            onclick="openNav()">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid header-bottom hidden-xs hidden-sm">
+        <div class="row">
+            <ul class="nav navbar-nav m-menu">
+                <li><a href="#">100 Новых лиц</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Экономика</a></li>
+                <li><a href="#">Политика</a></li>
+                <li><a href="#">Культура</a></li>
+                <li><a href="#">Спорт</a></li>
+                <li><a href="#">Право</a></li>
+                <li><a href="#">Мнения</a></li>
+                <li><a href="#">Репортаж</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div class="container news block-position">
+        <div class="row link-container">
+            <a href="#">Главная > </a>
+            <a href="#">Экономика ></a>
+            <a href="#">Смотрите-ка, кто приплыл! /</a>
+            <a href="#">ФОТО /</a>
+        </div>
+        <div class="row news-box">
+            <span class="data-span">3 сентябрь, 2017</span>
+            <p class="block-title">Смотрите-ка, кто приплыл! /ФОТО</p>
+            <div class="col-md-6 col-sm-7 news-left">
+                <div class="article-text">
+                    <p>
+                        ATPress.kz. 18 мая. В Атырау рыбаки недавно выловили
+                        в реке Жайык диковинную для здешних мест рыбу. Оказалось, что это речной угорь – ученые это подтвердили.
+                    </p>
+                    <div class="share-item">
+                        <span>Поделиться:</span>
+                        <div class="share-social">
+                            <a href="#"><i class="icon n-fb"></i></a>
+                            <a href="#"><i class="icon n-ins"></i></a>
+                            <a href="#"><i class="icon n-vk"></i></a>
+                            <a href="#"><i class="icon n-tel"></i></a>
+                            <a href="#"><i class="icon n-tw"></i></a>
+                            <a href="#"><i class="icon n-wha"></i></a>
+                        </div>
+                    </div>
+                    <div class="sl-news visible-xs">
+                        <a href="#"><p>Подпись фото если есть</p></a>
+                        <div class="slnews-for slnews-for2">
+                            <div class="nfor-item2">
+                                <img src="image/news/2bitmap.jpg" alt="">
+                            </div>
+                            <div class="nfor-item2">
+                                <img src="image/news/2bitmap-copy-2.jpg" alt="">
+                            </div>
+                            <div class="nfor-item2">
+                                <img src="image/news/2bitmap-copy-3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="slnews-nav">
+                            <div class="nnav-item2">
+                                <img src="image/news/2bitmap.jpg" alt="">
+                            </div>
+                            <div class="nnav-item2">
+                                <img src="image/news/2bitmap-copy-2.jpg" alt="">
+                            </div>
+                            <div class="nnav-item2">
+                                <img src="image/news/2bitmap-copy-3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        Об этом было заявлено на заседании координационного штаба
+                        рыбоохранной акции «Бекiре-2018», которое сегодня прошло в
+                        Атырауской областной территориальной инспекции лесного хозяйства
+                        и животного мира. Проводил заседание штаба руководитель инспекции Данияр Баймагамбетов.
+                    </p>
+                    <p>
+                        Одним из докладчиков на заседании была старший научный сотрудник
+                        Атырауского филиала Казахского научно-исследовательского института рыбного
+                        хозяйства (КазНИИРХ) Елена Бокова. Рассказывая, в целом, о проводимой научной
+                        работе на реке Жайык (Урал) и Кигач, она отметила, что 8 мая на тоне «Еркинкала»
+                        в неводные орудия лова рыбаков попался речной угорь. Это редкий вид рыбы для здешних
+                        мест, его появление в реке Жайык было зафиксировано всего два раза – в 1973 и в 2008 году.
+                        И вот через десять лет угорь каким-то необъяснимым образом оказался в Атырау.
+                        Длина экземпляра, который попался в сети рыбаков 8 мая – 94 см.
+                    </p>
+                    <p>
+                        Научный сотрудник Атырауского филиала
+                        КазНИИРХ Елена Бокова: «Для определения
+                        его достоверного вида я отправила в Алматы,
+                        в зоологическую комиссию, фото выловленной рыбы
+                        профессору, который занимается именно «краснокнижными» видами рыб. И да,
+                        действительно, я получила подтверждение, что это речной угорь, который попал из
+                        Оренбурга. Там когда-то, в водохранилищах, акклиматизировали личинки угря. Возможно,
+                        этот угорь попал к нам оттуда – приплыл по течению».
+
+                    </p>
+                    <p>
+                        Более того, по словам Елены Боковой, у нас в реке появляется сельдь.
+                        На «Нижнетатарской» тоне, в районе дачного поселка «Бугорки», проводится вылов
+                        рыбы в научных целях. И там атырауские ученые наблюдают ход сельди. И если раньше
+                        шла килька большими объемами, то теперь селедка-«черноспинка». Теперь науке предстоит
+                        выяснить: почему в Жайык заплывают эти рыбы?
+                    </p>
+                    <p>
+                        Вообще-то, как отметила Е. Бокова, это волжская селедка – там
+                        ее район обитания и нереста. Почему в этом году она выбрала дорогу в
+                        Жайык – предстоит выяснить ученым. При этом сельдь идет икряная. У нас,
+                        по словам специалистов рыбной отрасли, никогда в реке не наблюдался нерест сельди.
+                        Это морской вид рыбы, она нагуливается в море и заходит на нерест в Волгу.
+                    </p>
+                    <p>
+                        - К нам в реку она, может быть, заходила когда-то.
+                        А сейчас мы наблюдаем в уловах рыбаков селедку. Причем, в
+                        больших количествах, - подчеркнула Елена Бокова.
+                    </p>
+                    <p>
+                        Между тем, как сообщил на заседании координационного штаба
+                        официальный представитель Атырауской областной территориальной
+                        инспекции лесного хозяйства и животного мира Олег Тушканов, 9 мая
+                        закончился весенний этап путины в открытой части Каспийского моря.
+                        И освоение лимита на данном участке составило 37%, общее выполнение лимита
+                        по реке Жайык и морю в пределах Атырауской области - 41%.
+                    </p>
+                    <p class="author">
+                        Рахим Койлыбаев
+                        Фото редакции ATPress.kz предоставлено Еленой Боковой</p>
+                    <div class="article-links">
+                        <a href="#" class="btn-article">Рыбалка</a>
+                        <a href="#" class="btn-article">Отдых</a>
+                        <a href="#" class="btn-article">Туризм</a>
+                    </div>
+                    <div class="share-item">
+                        <span>Поделиться:</span>
+                        <div class="share-social">
+                            <a href="#"><i class="icon n-fb"></i></a>
+                            <a href="#"><i class="icon n-ins"></i></a>
+                            <a href="#"><i class="icon n-vk"></i></a>
+                            <a href="#"><i class="icon n-tel"></i></a>
+                            <a href="#"><i class="icon n-tw"></i></a>
+                            <a href="#"><i class="icon n-wha"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment-box">
+                    <p><span>126 Комментариев</span></p>
+                    <div class="comment-leave">
+                        <a href="#" class="comment-profile">
+                            <img src="image/news/2-lay.png" alt="">
+                        </a>
+                        <input type="text" placeholder="Начните обсуждение…">
+                    </div>
+                    <div class="comment-item">
+                        <a href="#" class="comment-profile">
+                            <img src="image/news/2-lay.png" alt="">
+                        </a>
+                        <div class="comment-body">
+                            <p class="comment-name">Dmassiani<span class="comment-span">2 years ago</span></p>
+                            <p>
+                                Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Sed ac dapibus neque,
+                                et dignissim ligula. Integer dui nulla, fringilla sed
+                                est sit amet, suscipit laoreet metus. Morbi egestas faucibus
+                                neque, sed suscipit erat sodales ac. Maecenas hendrerit id ante
+                                id dignissim. Proin aliquet, quam accumsan consequat adipiscing, augue
+                                enim congue sem, quis consectetur eros odio ac erat. Maecenas
+                                placerat urna ultrices nisi vestibulum, eu elementum mauris
+                                pulvinar. Integer auctor urna ipsum, eu gravida ante sollicitudin
+                                vel. Sed quam neque, viverra eleifend mi eu, fringilla dictum ipsum.
+                                Nullam vulputate id metus a ultrices. Sed dictum faucibus pellentesque.
+                                Proin sollicitudin lectus vel velit dignissim, non laoreet nulla sollicitudin.
+                                Phasellus malesuada, nulla in feugiat vehicula, diam ligula condimentum purus,
+                                sed fermentum nisl purus vel est. In pellentesque magna pharetra ullamcorper
+                                consectetur. Sed ut adipiscing tellus.
+                                Etiam ultricies ullamcorper nunc et pharetra. Vivamus a adipiscing elit, vel viverra
+                                diam.
+                            </p>
+                            <span class="reply">Ответить</span>
+                            <div class="comment-item">
+                                <a href="#" class="comment-profile">
+                                    <img src="image/news/2-lay.png" alt="">
+                                </a>
+                                <div class="comment-body">
+                                    <p class="comment-name">Dmassiani
+                                        <span class="comment-span">
+                                            <i class="fas fa-reply"></i>Dmassiani
+                                        </span>
+                                        <span class="comment-span">2 years ago</span>
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit.
+                                    </p>
+                                    <span class="reply">Ответить</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-morecomment">Загрузить еще комментарий</a>
+                </div>
+            </div>
+            <div class="col-md-5 col-sm-5 news-right">
+                <div class="sl-news hidden-xs">
+                    <a href="#"><p>Подпись фото если есть</p></a>
+                    <div class="slnews-for slnews-for2">
+                        <div class="nfor-item2">
+                            <img src="image/news/2bitmap.jpg" alt="">
+                        </div>
+                        <div class="nfor-item2">
+                            <img src="image/news/2bitmap-copy-2.jpg" alt="">
+                        </div>
+                        <div class="nfor-item2">
+                            <img src="image/news/2bitmap-copy-3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="slnews-nav">
+                        <div class="nnav-item2">
+                            <img src="image/news/2bitmap.jpg" alt="">
+                        </div>
+                        <div class="nnav-item2">
+                            <img src="image/news/2bitmap-copy-2.jpg" alt="">
+                        </div>
+                        <div class="nnav-item2">
+                            <img src="image/news/2bitmap-copy-3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row news-popular">
+            <p class="block-title">Похожие новости</p>
+            <div class="col-md-3 col-sm-3 popular-item">
+                <p>Культура</p>
+                <img src="image/main/rectangle-5.jpg" alt="">
+                <p>Столичный творческий десант в Атырау</p>
+                <span class="data-span">3 сентябрь, 2017</span></div>
+            <div class="col-md-3 col-sm-3 popular-item">
+                <p>Культура</p>
+                <img src="image/main/rectangle-5-copy.jpg" alt="">
+                <p>В Атырау задержаны сотрудники Национальной гвардии /ФОТО и ВИДЕО</p>
+                <span class="data-span">3 сентябрь, 2017</span></div>
+            <div class="col-md-3 col-sm-3 popular-item">
+                <p>Культура</p>
+                <img src="image/main/rectangle-5-copy-2.jpg" alt="">
+                <p>Двери в шахту лифта были заварены</p>
+                <span class="data-span">3 сентябрь, 2017</span></div>
+            <div class="col-md-3 col-sm-3 popular-item">
+                <p>Культура</p>
+                <img src="image/main/rectangle-5-copy-2.jpg" alt="">
+                <p>Двери в шахту лифта были заварены</p>
+                <span class="data-span">3 сентябрь, 2017</span></div3
+            </div>
+        </div>
+        <i class="icon totop" id="toTop"></i>
+        <div class="popup-wrapper">
+            <div class="popup-bg"></div>
+            <div class="popup" id="popup-search">
+                <button class="b-search"></button>
+                <input type="text" placeholder="Что вы ищете?">
+            </div>
+            <div class="popup" id="popup-pub">
+                <p>Отправить публикацию</p>
+                <input type="text" id="name" placeholder="Имя">
+                <input type="text" id="phone" placeholder="Телефон">
+                <input type="text" id="mail" placeholder="Ваш e-mail*">
+                <label for="file" class="file_upload">
+                    <a href="" class="btn-upload">Выбрать</a>
+                    <span>Прикрепить файл</span>
+                    <input type="file" id="file">
+                </label>
+                <button class="btn-send">Отправить</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="row footer-top">
+            <div class="col-md-5 col-sm-4 hidden-xs block-line"></div>
+            <div class="col-md-2 col-sm-3 logo-box">
+                <i class="icon footer-logo"></i>
+            </div>
+            <div class="col-md-5 col-sm-4 hidden-xs block-line"></div>
+        </div>
+        <div class="row footer-medium">
+            <div class="col-md-4 col-sm-4 footer-item">
+                <p>Категории</p>
+                <ul class="category-list category-column">
+                    <li><a href="#">100 новых лиц</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Экономика</a></li>
+                    <li><a href="#">Политика</a></li>
+                    <li><a href="#">Культура</a></li>
+                    <li><a href="#">Спорт</a></li>
+                    <li><a href="#">Право</a></li>
+                    <li><a href="#">Мнения</a></li>
+                    <li><a href="#">Репортаж</a></li>
+                    <li><a href="#">Очевидец</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-6 footer-item">
+                <p>Информация</p>
+                <ul class="category-list">
+                    <li><a href="#">О проекте</a></li>
+                    <li><a href="#">Правила сайта</a></li>
+                    <li><a href="#">Реклама</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-6 footer-item block-xs">
+                <p>Соц.сети</p>
+                <ul class="category-list">
+                    <li><a href="#"><i class="icon f-vk"></i>О проекте</a></li>
+                    <li><a href="#"><i class="icon f-fb"></i>Правила сайта</a></li>
+                    <li><a href="#"><i class="icon f-tw"></i>Реклама</a></li>
+                    <li><a href="#"><i class="icon f-ins"></i>Контакты</a></li>
+                    <li><a href="#"><i class="icon f-tele"></i>Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-3 footer-item ">
+                <p>Подписка на новости</p>
+                <p>Подписка на новости</p>
+                <p>Оставьте ваш email, чтобы получать наши новости</p>
+                <input type="text" placeholder="Ваш email">
+                <button class="btn-subscribe"></button>
+            </div>
+        </div>
+        <div class="row footer-bottom">
+            <a href="#" class="icon f-ios"></a>
+            <a href="#" class="icon f-android"></a>
+            <a href="#"><i class="icon i-copyright"></i></a>
+        </div>
+        <div class="row footer-basement">
+            <p>Информационный ресурс ATPress.kz © 2017. Все права защищены</p>
+            <p>Использование материалов возможно только с соблюдением Правил пользования сайтом</p>
+            <p>Разработка и дизайн bg.pro, 2018</p>
+        </div>
+    </div>
+
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<script type="text/javascript" src="slick/slick.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/js.js"></script>
+</body>
+</html>
