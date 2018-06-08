@@ -1,4 +1,4 @@
-@font-face {
+sidenav@font-face {
     font-family: "FuturaPT-Demi";
     src: url('../fonts/FuturaPTDemi.otf');
 }
@@ -461,6 +461,7 @@ a {
     width: 64px;
     height: 64px;
     background-color: #00568e;
+    border-radius: 0;
 }
 
 .navbar-toggle .icon-bar {
@@ -635,6 +636,12 @@ a {
     line-height: normal;
     color: #9b9b9b;
 }
+.list-item a{
+    color: black;
+}
+.list-item a:hover,.list-item a:focus{
+    color: black;
+}
 
 .block-title {
     font-family: FuturaPT-Bold;
@@ -685,7 +692,29 @@ a {
     color: rgba(0, 0, 0, 0.87);
     margin-bottom: 0;
 }
+.popular-item a{
+    color: black;
+}
+.popular-item a:hover, .popular-item a:focus{
+    color: black;
+}
 
+.dtop-item a,.dbottom-item a, .video-top a,
+.video-bottom a,.img-bottom a,.img-top a, .sl-caption a
+
+{
+    color: black;
+}
+.dtop-item a:hover, .dtop-item a:focus ,.dbottom-item a:hover, .dbottom-item a:focus ,.video-top a:hover, .video-top a:focus,
+.video-bottom  a:hover, .video-bottom,.img-top  a:hover, .img-top,
+.img-bottom  a:hover, .img-bottom a:focus
+{
+    color: black;
+}
+.sl-caption a:hover, .sl-caption a:focus{
+    color: black;
+    text-decoration: none;
+}
 .data-span {
     max-width: 98px;
     height: 16px;
@@ -1354,6 +1383,12 @@ a {
 .econom-item{
     margin-bottom: 30px;
 }
+.econom-item a{
+    color: black;
+}
+.econom-item a:hover,.econom-item a:focus{
+    color: black;
+}
 .econom-img{
     padding-left: 0;
 }
@@ -1405,6 +1440,12 @@ a {
     line-height: normal;
     letter-spacing: normal;
     color: rgba(0, 0, 0, 0.87)
+}
+.econom-news .list-item a{
+    color: black;
+}
+.econom-news .list-item a:hover,.econom-news  .list-item a:focus{
+    color: black;
 }
 .show-more{
     display: inline-block;
@@ -1883,7 +1924,7 @@ svg:not(:root).svg-inline--fa{
     .sl-img img {
         width: 100%;
         height: 100%;
-        object-fit: hover;
+        object-fit: cover;
     }
 
     .sl-caption p {
